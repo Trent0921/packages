@@ -13,7 +13,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: trent0921
-          password: ${{ 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 }}
+          password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
           repository: trent0921/publish-packages/game
           tag_with_sha: true
